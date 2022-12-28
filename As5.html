@@ -1,0 +1,104 @@
+
+
+<!-- 
+    5)Write a HTML page to show usages of HTML Table tag and its attributes. Define following attributes of Table 
+CELLSPACING, CELLPADDING, ROWSPAN and COLSPAN?  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>Assignment_5</title>
+  </head>
+
+  <style>
+    body {
+      background-color: #642bff7a;
+    }
+    table {
+      margin: auto;
+      margin-top: 10%;
+
+      border: 2px solid tomato;
+      text-align: center;
+    }
+
+    th {
+      font-size: 35px;
+      background-color: rgb(133 255 226);
+      height: 50px;
+    }
+    td {
+      font-size: 25px;
+      background-color: rgb(97 241 255 / 92%);
+      height: 40px;
+      width: 1006px;
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <table border="">
+      <thead>
+        <tr>
+          <th rowspan="3">Day</th>
+          <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+          <th colspan="2">Schedule</th>
+          <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+          <th>Login</th>
+          <th>End</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2">Monday</td>
+          <td rowspan="2" style="background: #ffecab">8.00 a.m .</td>
+          <td rowspan="2" style="background: rgb(20, 220, 117)">9.00 a.m .</td>
+          <td>Introducton To XML</td>
+        </tr>
+        <tr>
+          <td>Validity : DTD and Relax NG</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Tuesday</td>
+          <td style="background: #ffecab">8.00 a.m .</td>
+          <td style="background: #ffecab">11.00 a.m .</td>
+
+          <td>XPath</td>
+        </tr>
+        <tr>
+          <td style="background: #ffecab">11.00 a.m .</td>
+          <td style="background: rgb(247, 106, 106)">2.00 p.m .</td>
+
+          <td rowspan="2">XSL Transformatics</td>
+        </tr>
+        <tr>
+          <td style="background: rgb(247, 106, 106)">2.00 p.m .</td>
+          <td style="background: rgb(20, 220, 117)">5.00 p.m .</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td style="background: #ffecab">8.00 a.m .</td>
+          <td>12.00 p.m .</td>
+
+          <td>XSL Formating Objects</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <marquee direction="right" style="background: deeppink; margin-top: 30px"
+      ><h1>Table by - Sanyam Jain</h1></marquee
+    >
+
+    <marquee direction="up" style="background: deeppink; margin-top: 30px"
+      ><h1>Table by - Sanyam Jain</h1></marquee
+    >
+  </body>
+</html>

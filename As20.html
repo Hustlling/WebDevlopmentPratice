@@ -1,0 +1,51 @@
+<!-- 20) Write the necessary code for the web page. Your web page has 6 different images. All images has same width 
+and height 200px X 200px and when you move mouse over a particular image, its size goes 1.5 times and a shadow 
+will appear around the image and this action should take 1/10 seconds to complete.  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment_20</title>
+    <style>
+      * {
+        background-color: #4c356d;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        margin: 18px;
+      }
+
+      img:hover {
+        transform: scale(1.5);
+        filter: drop-shadow(0 0 0.75rem);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://images.unsplash.com/photo-1562155847-c05f7386b204?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmV3JTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      alt="blur"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1551582045-6ec9c11d8697?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmV3JTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      alt="snow"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1530509741175-5203376b1a89?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=388&q=80"
+      alt="road"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1599554548429-1bed1e9f28d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bmV3JTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      alt="hills"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1535463731090-e34f4b5098c5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG5ldyUyMHdhbGxwYXBlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      alt="lake"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1602605323163-62ce11f5c85e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG5ldyUyMHdhbGxwYXBlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      alt="city"
+    />
+  </body>
+</html>

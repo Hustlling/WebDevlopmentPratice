@@ -1,0 +1,80 @@
+<!-- 3) Write the HTML Code for the following Table Structure : 
+Year Course Name Total 
+MCA M.Tech. MBA(MS) B.Com. Student 
+2019 500 150 600 450 1700 
+2020 520 140 550 400 1610 
+Grand Total 3310  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment_3</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(162, 255, 226);
+    }
+
+    table {
+      margin: auto;
+      margin-top: 15%;
+      height: 300px;
+      width: 500px;
+
+      border-style: collapse;
+      border: 2px solid tomato;
+      text-align: center;
+      font-size: 25px;
+    }
+    th {
+      background-color: #ffc5e4b8;
+    }
+    td {
+      background-color: #ffdcdcb3;
+    }
+  </style>
+  <body>
+    <table border>
+      <thead>
+        <tr>
+          <th rowspan="2">Year</th>
+          <th colspan="4">Course Name</th>
+          <th rowspan="2">Total Students</th>
+        </tr>
+        <tr>
+          <th>MCA</th>
+          <th>M.Tech</th>
+          <th>MBA(MS)</th>
+          <th>B.Com.</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>2019</td>
+          <td>500</td>
+          <td>150</td>
+          <td>600</td>
+          <td>450</td>
+          <td>1700</td>
+        </tr>
+
+        <tr>
+          <td>2020</td>
+          <td>520</td>
+          <td>140</td>
+          <td>550</td>
+          <td>400</td>
+          <td>1610</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th colspan="5">Grand Total</th>
+          <td>3310</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

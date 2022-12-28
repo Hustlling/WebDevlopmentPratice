@@ -1,0 +1,76 @@
+<!-- 15) Write HTML, CSS code for the following animation task. 
+ Your web page have a divs element, whose original coordinates are top 100px,left 100px, width 100 px and 
+height 100px. Your animation works for 10 seconds and in this period its: 
+ Background color will have to change from red to green, 
+ Its size becomes double.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment 15</title>
+    <style>
+      body {
+        background-color: #b6fffb;
+      }
+      div {
+        background-color: red;
+        top: 100px;
+        left: 100px;
+        width: 100px;
+        height: 100px;
+        color: black;
+        border: 10px solid #f719ff;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 34px;
+        font-weight: bolder;
+        animation-name: animate;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes animate {
+        0% {
+          background-color: red;
+          width: 100px;
+          height: 100px;
+        }
+        25% {
+          background-color: rgb(226, 136, 136);
+          width: 150px;
+          height: 150px;
+        }
+        50% {
+          background-color: rgb(103, 255, 103);
+          width: 200px;
+          height: 200px;
+        }
+        75% {
+          background-color: rgb(10, 163, 10);
+          width: 150px;
+          height: 150px;
+        }
+        100% {
+          background-color: green;
+          width: 100px;
+          height: 100px;
+        }
+        /* from{background-color: red;}
+        to{
+          transform: scale(2,2);
+          background-color: green;
+        } */
+      }
+      h1 {
+        text-align: center;
+        color: rgb(255, 107, 136);
+        font-family: "Monotype Corsiva", serif;
+        font-size: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animation</h1>
+    <div>Animate It.</div>
+  </body>
+</html>

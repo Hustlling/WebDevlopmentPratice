@@ -1,0 +1,61 @@
+<!-- 4)What is Image Map? How many type of Image Map are used in HTML and explain each type with example 
+ (HTML Code)?  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment_4</title>
+  </head>
+  <style>
+    body {
+      background-color: #ff69b4c9;
+    }
+    h1,
+    h3 {
+      text-align: center;
+      justify-content: center;
+    }
+    h4 {
+      font-size: 30px;
+      color: #9b00fc;
+    }
+    img {
+      display: block;
+      margin: auto;
+    }
+  </style>
+  <body>
+    <h1>Image Map</h1>
+    <h4>
+      The HTML "map" tag defines an image map. An image map is an image with
+      clickable areas. The areas are defined with one or more "area" tags.
+    </h4>
+    <h3>Click on the image to get details of that object</h3>
+    <img src="./As4_imgmap.jpg" alt="Workplace" usemap="#mymap" />
+    <map name="mymap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        href="./As4_mac.htm"
+        alt="Laptop"
+        target="_blank"
+      />
+      <area
+        shape="rect"
+        coords="290,172,333,250"
+        href="./As4_phone.html"
+        alt="Phone"
+        target="_blank"
+      />
+      <area
+        shape="circle"
+        coords="337,300,44"
+        href="./As4_coffee.html"
+        alt="Coffee"
+        target="_blank"
+      />
+     
+        <area shape="default" alt="slogan" href="As4_default.html" target="_blank" />
+      </map>
+  </body>
+</html>

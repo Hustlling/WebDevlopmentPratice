@@ -1,0 +1,86 @@
+<!-- 17 ) Write the HTML, JavaScript and CSS code for the following design: when user click on the “Show 
+Information” button it show the name and password value in below given div and when user click “Clear” button it 
+will clear the name and password textbox.  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignemt_17</title>
+  </head>
+  <style>
+    body {
+      background: url(./As17_Password.jpeg);
+    }
+    .container {
+      border-radius: 30px;
+      margin: auto;
+      margin-top: 10%;
+      padding: 20px 20px;
+      height: 300px;
+      width: 400px;
+      background-color: #024983;
+    }
+    b {
+      font-weight: bolder;
+      font-size: 25px;
+      color: #00ffbc;
+      padding-right: 20px;
+    }
+    #usname {
+      padding-right: 21px;
+    }
+    button {
+      margin: 19px;
+      padding: 11px;
+      text-align: center;
+      cursor: pointer;
+      background-color: black;
+      color: white;
+      border: 3px solid red;
+      border-radius: 15px;
+      font-weight: bolder;
+      font-size: larger;
+    }
+
+    #Result {
+      text-align: center;
+      height: 103px;
+      font-size: 24px;
+      font-weight: bolder;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <label id="usname" for="UserName"> <b>Name :</b> </label>
+      <input type="text" id="UserName" placeholder="UserName" />
+      <br /><br />
+      <label for="Password"> <b>Password:</b> </label>
+
+      <input type="password" id="Password" placeholder="password" />
+      <button type="submit" id="show_btn" onclick="Show()">
+        Show Information
+      </button>
+
+      <button id="clr_btn" onclick="Clear()">Clear</button>
+
+      <div id="res">
+        <h4 id="Result"></h4>
+      </div>
+    </div>
+    <script>
+      function Show() {
+        let User = document.getElementById("UserName");
+        let Pass = document.getElementById("Password");
+        document.getElementById("res").style.backgroundColor = "red";
+        document.getElementById("Result").innerHTML =
+          "Name is " + User.value + " <br>Password is " + Pass.value;
+      }
+      function Clear() {
+        User = document.getElementById("UserName");
+        Pass = document.getElementById("Password");
+        User.value = "";
+        Pass.value = "";
+      }
+    </script>
+  </body>
+</html>

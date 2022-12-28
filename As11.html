@@ -1,0 +1,52 @@
+<!-- 11) Write the HTML Code for the following Table Structure. If you click on Yahoo then it open http://yahoo.com
+and if you click google then it open http://google.com in below IFrame. : -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assingnment Q11</title>
+    <style>
+      body {
+        background-color: tan;
+        align-items: center;
+      }
+      table {
+        width: 80%;
+        border: 2px solid cadetblue;
+        height: 600px;
+        background-color: darksalmon;
+      }
+      th,
+      td {
+        border: 2px solid springgreen;
+        text-align: center;
+        font-size: 30px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <table>
+        <tr>
+          <th>
+            <a href="https://www.wikipedia.org/" target="iframe">YAHOO</a>
+          </th>
+          <th>
+            <a href="https://www.wikipedia.org/" target="iframe">GOOGLE</a>
+          </th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <iframe
+              name="iframe"
+              title="Iframe"
+              width="100%"
+              height="600px"
+            ></iframe>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

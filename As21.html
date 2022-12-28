@@ -1,0 +1,112 @@
+<!-- 21) Write the javascript, html and CSS code for the below given design: this web page shows the Simple Interest 
+and other information in given format, when the “Calculate Simple Interest” Button is clicked. If we clicked the 
+“Clear” button, it will clear all the entries. You can use JQuery syntax.  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment_21</title>
+  </head>
+  <style>
+    body {
+      background: url(./As21_Interest.jpg);
+      background-size: 100%;
+    }
+
+    .container {
+      margin: auto;
+      margin-top: 10%;
+
+      padding: 20px 20px;
+
+      width: 485px;
+    }
+    b {
+      font-weight: bolder;
+      font-size: 30px;
+
+      padding-right: 20px;
+    }
+    button {
+      margin: 18px;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      background-color: black;
+      color: white;
+      border: 3px solid red;
+      border-radius: 15px;
+      font-weight: bolder;
+      font-size: 20px;
+    }
+    div {
+      border-radius: 30px;
+      background-color: #65c2d169;
+    }
+    input#PrAmount {
+      padding-left: 43px;
+    }
+    input#Roi {
+      padding-left: 75px;
+    }
+    input#Time {
+      padding-left: 95px;
+    }
+    #Result {
+      color: #f4ff00;
+      background-color: turquoise;
+      padding-top: 15px;
+      padding-left: 40px;
+      padding-bottom: 20px;
+      height: 103px;
+      font-size: 26px;
+      font-weight: bolder;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <label for="PrAmount"> <b>Principal Amount</b> </label>
+      <input type="number" id="PrAmount" placeholder="Principal Amount" />
+      <br /><br />
+      <label for="Roi"> <b>Rate of Interest</b> </label>
+      <input type="number" id="Roi" placeholder="Rate of interest" />
+      <br /><br />
+      <label for="Time"> <b>Time in Years</b> </label>
+      <input type="number" id="Time" placeholder="Time in Years" />
+      <br /><br />
+
+      <button type="submit" id="Cal_in" onclick="Show()">
+        Calculate Simple Interest
+      </button>
+      <button id="clr_btn" onclick="Clear()">Clear</button>
+
+      <div>
+        <h4 id="Result"></h4>
+      </div>
+    </div>
+    <script>
+      function Show() {
+        let p = document.getElementById("PrAmount");
+        let r = document.getElementById("Roi");
+        let t = document.getElementById("Time");
+        document.getElementById("Result").innerHTML =
+          "Principal Amount = " +
+          p.value +
+          " <br>Rate of Interest =  " +
+          r.value +
+          "<br>Time : " +
+          t.value +
+          " Years <br> Simple Interest is " +
+          (p.value * r.value * t.value) / 100 +
+          " Rs.";
+      }
+      function Clear() {
+        let p = document.getElementById("PrAmount");
+        let r = document.getElementById("Roi");
+        let t = document.getElementById("Time");
+        p.value = "";
+        r.value = "";
+        t.value = "";
+      }
+    </script>
+  </body>
+</html>
